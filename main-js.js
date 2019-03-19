@@ -1,5 +1,4 @@
 
-
     /*
      * Code to make and validate the settings ranges.
      * Date : 19-03-2019
@@ -19,33 +18,19 @@
             $system.rangeRows           = $('#advance-pricing-body .adPriceRow').not('.restPriceRange');
             $system.totalRows           = $('#advance-pricing-body .adPriceRow').not('.restPriceRange').length;
             $system.wouldBeRangeIndex   = $system.totalRows - 1;
-            
             $system.initiatorStart      = '.range_start_field';
             $system.initiatorEnd        = '.range_end_field';
-            
             $system.errors              = [];
-            
-
-
-            console.log($system.initiatorStart);
-            console.log($system.initiatorEnd);
-
+    
             settings.min_max_validate();
-
-            
-
 
         },
         min_max_validate : function() {
 
             $system.minMaxValidateError = false;
-
             var rowIndex  = 0;
-
             for(rowIndex = 0; rowIndex < $system.totalRows; rowIndex++) {
-
-                
-
+               
                 var rangeStart = $system.row.eq( rowIndex ).find('.range_start_field').val();
                 var rangeEnd   = $system.row.eq( rowIndex ).find('.range_end_field').val();
 
@@ -65,8 +50,6 @@
                         }else {
                             
                             // $system.minMaxValidateError = false;
-                            
-
                         }
                     }
 
@@ -81,25 +64,17 @@
                         if (rangeEnd <= rangeStart) {
                             
                             $system.minMaxValidateError = true;
-
-                            // $system.minMaxValidateError = "Cost range end must be greater then cost range start.";
-
                         }
                     }
                 }
             }
-
             settings.range_overlap_check();   
-
 
         },
         range_overlap_check : function() {
 
             $system.rangeOverlapError = false;
-
             var rowIndex  = 0;
-
-
             for(rowIndex = 0; rowIndex < $system.totalRows; rowIndex++) {
 
                 console.log( $system.row.eq( rowIndex ) );
@@ -110,32 +85,24 @@
                     currentRowRangeEnd = ( currentRowRangeEnd ) ? parseFloat( currentRowRangeEnd ) : undefined;
                     nextRangeStart   = ( nextRangeStart )   ? parseFloat( nextRangeStart )   : undefined;
                     
-                console.log('Row : ',rowIndex,' range end =',currentRowRangeEnd,' range start', nextRangeStart);
+                    console.log('Row : ',rowIndex,' range end =',currentRowRangeEnd,' range start', nextRangeStart);
 
-
-                
-                
-
-
-
-                
                 if (rowIndex == $system.wouldBeRangeIndex) {
                     /*
-                    if (currentRowRangeEnd != undefined) {
+                        if (currentRowRangeEnd != undefined) {
 
-                        if (currentRowRangeEnd <= rangeStart) {
+                            if (currentRowRangeEnd <= rangeStart) {
 
-                            $system.minMaxValidateError = "Cost range end must be greater then cost range start.";
+                                $system.minMaxValidateError = "Cost range end must be greater then cost range start.";
 
-                        }else {
-                            
-                            $system.minMaxValidateError = null;
-                            showError = false;
+                            }else {
+                                
+                                $system.minMaxValidateError = null;
+                                showError = false;
 
+                            }
                         }
-                    }
                     */
-
                 }else {
 
                     if (currentRowRangeEnd == undefined || nextRangeStart == undefined) {
@@ -151,51 +118,30 @@
                         }
                     }
                 }
-                
-                
             }
-
-
-
-
-
             // call the error_handler.
-
             settings.error_handler($system.minMaxValidateError, $system.rangeOverlapError);
 
         },
         check_if_we_can_create_new_row : function() {
-            console.log( 'Check if we can create a new row.' );
-            
+
             if ($($system.realtimeInputHolder).closest('.adPriceRow').hasClass('createNewRange') && 
                 $($system.realtimeInputHolder).val() && 
                 $($system.realtimeInputHolder).hasClass('range_end_field')) {
                 
-                console.log('Yes we can create a new row');
+                
                 settings.create_new_row();
 
             }else {
-                console.log('No we can not create a new row its not the last row');
-
+            
                 console.log('Errors are : ', $system.errors);
-                
-
             }
-
-
-
-
-
             console.log('Completed :-)');
-
-
 
         },
         create_new_row : function() {
 
-
             $('.adPriceRow').removeClass('createNewRange');
-
 
             newRowHTML = '';
             rangeIndex = 'new';
@@ -254,7 +200,6 @@
 
 
             // Make the fields available 
-
             $("#advance-pricing-body input[type=text]").prop("disabled", false);
             $("#advance-pricing-body select").prop("disabled", false);
 
@@ -269,8 +214,6 @@
                 console.log( 'Cost range end must me greater then cost start value.' );
                 $system.errors[0] = 'Cost range end must me greater then cost start value.'; 
 
-               
-
             }
 
             if(rangeOverlapError) {
@@ -279,13 +222,12 @@
                 if ($system.errors.length>0) {
 
                     $system.errors[1] = 'Your ranges overlap.'; 
+
                 }else {
                     
                     $system.errors[0] = 'Your ranges overlap.'; 
-
                 }
                 
-
             }
 
             if ($system.errors.length != 0) {
@@ -320,12 +262,7 @@
         }
     };
 
-    
-
-
-
     $(document).on('input', $('#advance-pricing-body').find('.range_start_field'), function(ev) {
-
         console.log("input happened in range start");
         $system.realtimeInputHolder = ev.target;
         settings.init();
@@ -333,9 +270,7 @@
 
     });
             
-           
     $(document).on('input', $('#advance-pricing-body').find('.range_start_field') , function(ev) {
-
         console.log("input happened in range end");
         $system.realtimeInputHolder = ev.target;
         settings.init(); 
