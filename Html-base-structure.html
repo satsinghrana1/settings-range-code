@@ -1,0 +1,249 @@
+<tbody id="advance-pricing-body" class="addPriceAdvanceSetBody">
+
+    <!-- SETTING THE VALUE FOR THE LAST RANGE START... -->
+
+    <tr class="adPriceRow range firstRange">
+
+        <td>
+            <div class="col-md-5" style="padding: 0;">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input onkeypress="onlyDigitsAreAllowed();" type="text" name="cost[0][from]" class="form-control floatCheck range_1_start_from range_start_field" value="10">
+                </div>
+            </div>
+
+            <div class="col-md-1 widthhash" style=""></div>
+
+            <div class="col-md-5 settingSecondCost" style="padding: 0;">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input onkeypress="onlyDigitsAreAllowed();" type="text" name="cost[0][to]" class="form-control floatCheck range_1_end range_end_field" value="20">
+                </div>
+            </div>
+        </td>
+
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select onchange="changeOprator.call(this);" class="price_change_type timeZoneSelect for-advanced-price-1 range_1_price_change_type select2-hidden-accessible" name="cost[0][priceChangeType]" tabindex="-1" aria-hidden="true">
+                    <option selected="" value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cost0priceChangeType-ue-container"><span class="select2-selection__rendered" id="select2-cost0priceChangeType-ue-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+
+            <div class="col-md-5 input-group" style="padding-right:0px;">
+
+                <span class="input-group-addon advance-opr-1">
+
+    			                	x 
+    			                	    		                    </span>
+
+                <input type="text" class="form-control floatCheck range_1_price_change_amount price_change_value" name="cost[0][priceChange]" onkeypress="onlyDigitsAreAllowed();" value="10">
+            </div>
+        </td>
+
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select onchange="changeOprator.call(this);" class="timeZoneSelect for-advanced-price-2 range_1_comp_price_change_type comp_price_change_type select2-hidden-accessible" name="cost[0][compPriceChangeType]" tabindex="-1" aria-hidden="true">
+
+                    <option selected="" value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cost0compPriceChangeType-1g-container"><span class="select2-selection__rendered" id="select2-cost0compPriceChangeType-1g-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+
+            <div class="col-md-5 input-group" style="padding-right: 0px;">
+                <span class="input-group-addon advance-opr-2">
+
+    				                	x
+    				                    				            </span>
+                <input type="text" class="form-control floatCheck range_1_comp_price_change_amount comp_price_change_value" name="cost[0][compPriceChange]" onkeypress="onlyDigitsAreAllowed();" value="10">
+
+            </div>
+        </td>
+        <td class="delete-current-row">
+        </td>
+    </tr>
+
+    <!-- SETTING THE VALUE FOR THE LAST RANGE START... -->
+
+    <tr class="adPriceRow range firstRange">
+
+        <td>
+            <div class="col-md-5" style="padding: 0;">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input onkeypress="onlyDigitsAreAllowed();" type="text" name="cost[1][from]" class="form-control floatCheck range_1_start_from range_start_field" value="20.01">
+                </div>
+            </div>
+
+            <div class="col-md-1 widthhash" style=""></div>
+
+            <div class="col-md-5 settingSecondCost" style="padding: 0;">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input onkeypress="onlyDigitsAreAllowed();" type="text" name="cost[1][to]" class="form-control floatCheck range_1_end range_end_field" value="20.1">
+                </div>
+            </div>
+        </td>
+
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select onchange="changeOprator.call(this);" class="price_change_type timeZoneSelect for-advanced-price-1 range_1_price_change_type select2-hidden-accessible" name="cost[1][priceChangeType]" tabindex="-1" aria-hidden="true">
+                    <option selected="" value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cost1priceChangeType-fn-container"><span class="select2-selection__rendered" id="select2-cost1priceChangeType-fn-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+
+            <div class="col-md-5 input-group" style="padding-right:0px;">
+
+                <span class="input-group-addon advance-opr-1">
+
+    			                	x 
+    			                	    		                    </span>
+
+                <input type="text" class="form-control floatCheck range_1_price_change_amount price_change_value" name="cost[1][priceChange]" onkeypress="onlyDigitsAreAllowed();" value="2">
+            </div>
+        </td>
+
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select onchange="changeOprator.call(this);" class="timeZoneSelect for-advanced-price-2 range_1_comp_price_change_type comp_price_change_type select2-hidden-accessible" name="cost[1][compPriceChangeType]" tabindex="-1" aria-hidden="true">
+
+                    <option selected="" value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cost1compPriceChangeType-nj-container"><span class="select2-selection__rendered" id="select2-cost1compPriceChangeType-nj-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+
+            <div class="col-md-5 input-group" style="padding-right: 0px;">
+                <span class="input-group-addon advance-opr-2">
+
+    				                	x
+    				                    				            </span>
+                <input type="text" class="form-control floatCheck range_1_comp_price_change_amount comp_price_change_value" name="cost[1][compPriceChange]" onkeypress="onlyDigitsAreAllowed();" value="2">
+
+            </div>
+        </td>
+        <td class="delete-current-row">
+            <i class="icon-cross2 removePriceAdvanceSetRow"></i>
+        </td>
+    </tr>
+
+    <!-- SETTING THE VALUE FOR THE LAST RANGE START... -->
+
+    <tr class="adPriceRow createNewRange">
+        <td>
+            <div class="col-md-5" style="padding: 0;">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input onkeypress="onlyDigitsAreAllowed();" type="text" name="cost[2][from]" class="form-control floatCheck range_2_start_from range_start_field" value="20.11">
+                </div>
+            </div>
+
+            <div class="col-md-1 widthhash" style=""></div>
+
+            <div class="col-md-5 settingSecondCost" style="padding: 0;">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input onkeypress="onlyDigitsAreAllowed();" type="text" name="cost[2][to]" class="form-control floatCheck range_2_end range_end_field" value="">
+                </div>
+            </div>
+        </td>
+
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select disabled="" onchange="changeOprator.call(this);" class="price_change_type timeZoneSelect for-advanced-price-1 range_2_price_change_type select2-hidden-accessible" name="cost[2][priceChangeType]" tabindex="-1" aria-hidden="true">
+                    <option value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+                </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-cost2priceChangeType-g1-container"><span class="select2-selection__rendered" id="select2-cost2priceChangeType-g1-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+
+            <div class="col-md-5 input-group" style="padding-right:0px;">
+
+                <span class="input-group-addon advance-opr-1">x</span>
+
+                <input type="text" disabled="disabled" onkeypress="onlyDigitsAreAllowed();" class="form-control floatCheck range_2_price_change_amount price_change_value" name="cost[2][priceChange]">
+
+            </div>
+        </td>
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select onchange="changeOprator.call(this);" class="timeZoneSelect for-advanced-price-2 range_2_comp_price_change_type comp_price_change_type select2-hidden-accessible" name="cost[2][compPriceChangeType]" disabled="" tabindex="-1" aria-hidden="true">
+
+                    <option value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+
+                </select><span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-labelledby="select2-cost2compPriceChangeType-re-container"><span class="select2-selection__rendered" id="select2-cost2compPriceChangeType-re-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+            <div class="col-md-5 input-group" style="padding-right: 0px;">
+                <span class="input-group-addon advance-opr-2">x</span>
+                <input type="text" disabled="disabled" onkeypress="onlyDigitsAreAllowed();" class="form-control floatCheck range_2_comp_price_change_amount comp_price_change_value" name="cost[2][compPriceChange]">
+
+            </div>
+        </td>
+        <td class="delete-current-row"></td>
+    </tr>
+
+    <!-- REST PRICE RANGES... START -->
+    <tr class="adPriceRow restPriceRange">
+        <td>
+            <div class="col-md-12" style="padding: 0;">
+                <div style="padding: 7px;border: 1px solid #dfe3e9;margin-right: 19px;border-radius: 4px;font-weight: 500;">Rest of the price ranges</div>
+            </div>
+        </td>
+
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select onchange="changeOprator.call(this);" class="timeZoneSelect for-advanced-price-1 range_rest_price_change_type rest_price_change_type select2-hidden-accessible" name="cost[2][priceChangeType]" value="1" tabindex="-1" aria-hidden="true">
+
+                    <option selected="" value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cost2priceChangeType-5r-container"><span class="select2-selection__rendered" id="select2-cost2priceChangeType-5r-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+
+            <div class="col-md-5 input-group" style="padding-right:0px;">
+
+                <span class="input-group-addon advance-opr-1">x</span>
+
+                <input type="text" onkeypress="onlyDigitsAreAllowed();" class="form-control floatCheck range_rest_price_change_amount rest_price_change_value" name="cost[2][priceChange]" value="2">
+
+            </div>
+        </td>
+
+        <td>
+
+            <div class="col-md-7" style="padding: 0 4px 0 0;">
+                <select onchange="changeOprator.call(this);" class="timeZoneSelect for-advanced-price-2 range_rest_comp_price_change_type rest_comp_price_change_type select2-hidden-accessible" name="cost[2][compPriceChangeType]" tabindex="-1" aria-hidden="true">
+
+                    <option selected="" value="1">Multiplied by</option>
+                    <option value="2">Markup by</option>
+
+                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-cost2compPriceChangeType-8q-container"><span class="select2-selection__rendered" id="select2-cost2compPriceChangeType-8q-container" title="Multiplied by">Multiplied by</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span>
+                </span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+            <div class="col-md-5 input-group" style="padding-right: 0px;">
+                <span class="input-group-addon advance-opr-2">x</span>
+                <input type="text" onkeypress="onlyDigitsAreAllowed();" class="form-control floatCheck range_rest_comp_price_change_amount rest_comp_price_change_value" name="cost[2][compPriceChange]" value="3">
+
+            </div>
+        </td>
+
+        <td></td>
+    </tr>
+    <!-- REST PRICE RANGES... END -->
+
+</tbody>
